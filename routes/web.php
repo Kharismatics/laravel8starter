@@ -22,3 +22,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::resource('posts', PostController::class);
+// Route::get('/posts', [PostController::class, 'index'])->name('posts');

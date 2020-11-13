@@ -3044,6 +3044,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 
@@ -24805,6 +24808,21 @@ var render = function() {
                     [
                       _vm._v(
                         "\n                            Dashboard\n                        "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "jet-nav-link",
+                    {
+                      attrs: {
+                        href: _vm.route("posts.index"),
+                        active: _vm.route().current("posts.index")
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Post\n                        "
                       )
                     ]
                   )
