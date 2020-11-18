@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,4 +23,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::resource('posts', PostController::class)->middleware(['auth:sanctum', 'verified']);
-// Route::get('/posts', [PostController::class, 'index'])->name('posts');
+
+// resource manual
+Route::get('/category', [CategoryController::class, 'index'])->name('category.index')->middleware(['auth:sanctum', 'verified']);
+Route::get('/category/create', [CategoryController::class, 'create'])->name('category.create')->middleware(['auth:sanctum', 'verified']);

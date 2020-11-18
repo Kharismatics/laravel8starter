@@ -124,10 +124,14 @@
                 }
             },
             save: function (data) {
-                this.$inertia.post('/posts', data)
+                // this.$inertia.post('/posts', data)
+                this.$inertia.post('/posts', data).then((res) => {
+                  console.log(res.response);
+                });
                 this.reset();
                 this.closeModal();
                 this.editMode = false;
+                console.log(this.errors);
             },
             edit: function (data) {
                 this.form = Object.assign({}, data);
