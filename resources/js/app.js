@@ -20,6 +20,9 @@ const app = document.getElementById('app');
 
 new Vue({
     vuetify: new Vuetify({
+        icons: {
+            iconfont: 'mdi', // default - only for display purposes
+        },
         theme: {
             // // default
             // themes: {

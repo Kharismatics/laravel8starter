@@ -1,6 +1,6 @@
 <template>
-    <app-layout>
-        <!-- <template #header>
+  <app-layout>
+    <!-- <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Dashboard
             </h2>
@@ -13,20 +13,21 @@
                 </div>
             </div>
         </div> -->
-                    <welcome />
-    </app-layout>
+
+    <welcome />
+  </app-layout>
 </template>
 
 <script>
-    import AppLayout from '@/Layouts/AppLayout'
-    import Welcome from '@/Jetstream/Welcome'
-    // import NavigationDrawers from '@/Vuetify/NavigationDrawers'
+import AppLayout from "@/Layouts/AppLayout";
+import Welcome from "@/Jetstream/Welcome";
+// import NavigationDrawers from '@/Vuetify/NavigationDrawers'
 
-    export default {
-        components: {
-            AppLayout,
-            Welcome,
-            // NavigationDrawers,
-        },
-    }
+export default {
+  components: {
+    AppLayout,
+    Welcome,
+    // NavigationDrawers,
+  },
+};
 </script>
